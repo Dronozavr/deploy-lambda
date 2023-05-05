@@ -2,11 +2,8 @@
   "name": "lambdas_monorepo",
   "version": "1.0.0",
   "description": "Lambdas monorepo",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "scripts": {},
+  "author": "Andrii Kifiak",
   "license": "ISC",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.115",

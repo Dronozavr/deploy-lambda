@@ -4,7 +4,7 @@ export const handler: Handler = async (_event: APIGatewayProxyEvent): Promise<AP
     try {
         const response = {
             statusCode: 200,
-            body: 'GET cars/ ' + getRandomInt(100),
+            body: 'GET cars/ ' + getRandomInt(100) + 'blss',
         };
         return response;
     } catch (err) {
