@@ -1,10 +1,10 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult, Handler } from 'aws-lambda';
-import { getRandomInt } from '../../libs/math';
+import { getRandomInt } from '@libs/math';
 export const handler: Handler = async (_event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
     try {
         const response = {
             statusCode: 200,
-            body: 'GET cars/ ' + getRandomInt(100) + 'blss',
+            body: 'GET cars/ ' + getRandomInt(100) + ' bless',
         };
         return response;
     } catch (err) {
