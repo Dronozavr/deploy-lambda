@@ -1,0 +1,20 @@
+service: 'my-mono-lambdas' # NOTE: update this with your service name
+frameworkVersion: '3'
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+package:
+   individually: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  cars:
+    handler: src/functions/cars/index.handler
+
+  trucks:
+    handler: src/functions/trucks/index.handler
+

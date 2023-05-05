@@ -26,6 +26,5 @@ jobs:
           npm ci
       - name: deploy
         run: |
-          npx tsc
-          zip -j deploy.zip ./dist/src/functions/trucks/*
-          aws lambda update-function-code --function-name=test --zip-file=fileb://deploy.zip
+          npx sls package
+          aws lambda update-function-code --function-name=test --zip-file=fileb://.serverless/cars.zip
