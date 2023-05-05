@@ -3,7 +3,7 @@ export const handler = async (_event: APIGatewayProxyEvent): Promise<APIGatewayP
     try {
         const response = {
             statusCode: 200,
-            body: 'GET trucks/',
+            body: 'GET trucks/ bitch',
         };
         return response;
     } catch (err) {
