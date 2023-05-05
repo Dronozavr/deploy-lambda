@@ -12,8 +12,7 @@
     "@types/aws-lambda": "^8.10.115",
     "esbuild": "^0.17.18",
     "serverless-esbuild": "^1.43.1",
-    "serverless-offline": "^12.0.4",
-    "typescript": "^5.0.4"
+    "serverless-offline": "^12.0.4"
   },
   "dependencies": {
     "aws-lambda": "^1.0.7"
