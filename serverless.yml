@@ -1,9 +1,6 @@
 service: 'my-mono-lambdas' # NOTE: update this with your service name
 frameworkVersion: '3'
 
-plugins:
-  - serverless-esbuild
-  - serverless-offline
 package:
    individually: true
 
@@ -18,3 +15,6 @@ functions:
   trucks:
     handler: src/functions/trucks/index.handler
 
+plugins:
+  - serverless-esbuild
+  - serverless-offline
